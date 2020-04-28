@@ -1,0 +1,581 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* upper headder start */
+#upper-headder{
+    background-color:#316DC3;
+    width: 100%;
+    height: 48px;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#upper-headder>.icons>i{
+    margin-right:25px;
+    font-size: 14px;
+    color: white;
+}
+#upper-headder>.icons>:nth-child(5){
+    background-color: #69bd02;
+    padding: 2px;
+    font-size: 18px;
+    border-radius: 3px;
+
+}
+#upper-headder>p{
+    font-size: 14px;
+    color: white;
+}
+#upper-headder>.buttons>a{
+    text-decoration: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    color: #427900;
+    background-color: white;
+}
+/* upper headder end */
+/* headder start */
+.headder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    top: 0;
+    height: 70px;
+    padding: 0 110px;
+    position: sticky;
+
+}
+.headder>.main-ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 530;
+    height: 100%;
+}
+.headder>.main-ul>li{
+    margin-right: 5px;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    transition: .3s;
+    position: relative;
+}
+.headder>.main-ul>li:hover{
+    background-color: #316DC3;
+    color: white;
+}
+.headder>.main-ul i{
+    font-size: 12px;
+    margin-left: 4px;
+}
+/* about */
+.about-ul{
+    list-style: none;
+    position: absolute;
+    width: 200px;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    background-color: white;
+    color: black;
+    transition: .3s;
+    height: 0;
+    overflow: hidden;
+}
+.about-ul>li{
+    padding: 5px 10px;
+    height: 30px;
+    transition: .3s;
+    position: relative;
+    
+}
+.about-ul>li:hover{
+    color: white;
+    background-color: blue;
+    padding-left: 20px;
+}
+.main-ul>li:hover>.about-ul{
+    transition: .3s;
+    height: 90px;
+    overflow: visible;
+}
+/* saylani welfare */
+.saylani-services-ul{
+    list-style: none;
+    position: absolute;
+    width: 200px;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    background-color: white;
+    color: black;
+    transition: .3s;
+    height: 0;
+    overflow: hidden;
+}
+.saylani-services-ul>li{
+    padding: 5px 10px;
+    height: 30px;
+    transition: .3s;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.saylani-services-ul>li:hover{
+    color: white;
+    background-color: blue;
+    padding-left: 20px;
+}
+.main-ul>li:hover>.saylani-services-ul{
+    transition: .3s;
+    height: 360px;
+    overflow: visible;
+}
+.edu-deep{
+    position: absolute;
+    color: black;
+    background-color: white;
+    list-style: none;
+    left: 100%;
+    top: 0;
+    transition: .3s;
+    width: 0;
+    overflow: hidden;
+}
+.edu-deep>li{
+    padding: 5px 10px;
+    height: 30px;
+    transition: .3s;
+}
+.edu-deep>li:hover{
+    color: white;
+    background-color: blue;
+    padding-left: 20px;
+}
+.saylani-services-ul>li:hover>.edu-deep{
+    width: 200px;
+}
+.med-deep{
+    position: absolute;
+    color: black;
+    background-color: white;
+    list-style: none;
+    left: 100%;
+    top: 0;
+    transition: .3s;
+    width: 0;
+    overflow: hidden;
+}
+.med-deep>li{
+    padding: 5px 10px;
+    height: 30px;
+    transition: .3s;
+
+}
+.med-deep>li:hover{
+    color: white;
+    background-color: blue;
+    padding-left: 20px;
+}
+.saylani-services-ul>li:hover>.med-deep{
+    width: 200px;
+}
+.wel-deep{
+    position: absolute;
+    color: black;
+    background-color: white;
+    list-style: none;
+    left: 100%;
+    top: 0;
+    transition: .3s;
+    width: 0;
+    overflow: hidden;
+}
+.wel-deep>li{
+    padding: 5px 10px;
+    height: 30px;
+    transition: .3s;
+
+}
+.wel-deep>li:hover{
+    color: white;
+    background-color: blue;
+    padding-left: 20px;
+}
+.saylani-services-ul>li:hover>.wel-deep{
+    width: 200px;
+}
+.Quran-deep{
+    position: absolute;
+    color: black;
+    background-color: white;
+    list-style: none;
+    left: 100%;
+    top: 0;
+    transition: .3s;
+    width: 0;
+    overflow: hidden;
+}
+.Quran-deep>li{
+    padding: 5px 10px;
+    height: 30px;
+    transition: .3s;
+
+}
+.Quran-deep>li:hover{
+    color: white;
+    background-color: blue;
+    padding-left: 20px;
+}
+.saylani-services-ul>li:hover>.Quran-deep{
+    width: 200px;
+}
+/* future-ul */
+.future-project-ul{
+    list-style: none;
+    position: absolute;
+    width: 200px;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    background-color: white;
+    color: black;
+    transition: .3s;
+    height: 0;
+    overflow: hidden;
+}
+.future-project-ul>li{
+    padding: 5px 10px;
+    height: 30px;
+    transition: .3s;
+    position: relative;
+}
+.future-project-ul>li:hover{
+    color: white;
+    background-color: blue;
+    padding-left: 20px;
+}
+.main-ul>li:hover>.future-project-ul{
+    transition: .3s;
+    height: 60px;
+    overflow: visible;
+}
+/* donation-ul */
+.donation-ul{
+    list-style: none;
+    position: absolute;
+    width: 200px;
+    top: 0;
+    left: 0;
+    margin-top: 50px;
+    background-color: white;
+    color: black;
+    transition: .3s;
+    height: 0;
+    overflow: hidden;
+}
+.donation-ul>li{
+    padding: 5px 10px;
+    height: 30px;
+    transition: .3s;
+    position: relative;
+    
+}
+.donation-ul>li:hover{
+    color: white;
+    background-color: blue;
+    padding-left: 20px;
+}
+.main-ul>li:hover>.donation-ul{
+    transition: .3s;
+    height:150px;
+    overflow: visible;
+}
+
+.headder>img{
+    width: 200px;
+    height: 50px;
+} */
+/* headder end */
+/* main pic start */
+.main-pic{
+    width: 100;
+}
+.main-pic>img{
+    width: 100%;
+    height: 448px;
+}
+/* main pic end */
+/* marqur start */
+.mark{
+    width: 100%;
+    height: 50px;
+    margin-top: -4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mak1{
+    background-color: #316DC3;
+    color:white ;
+    height: 30px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+span.date{
+    color: rgb(5, 182, 5);
+}
+span.moredetails{
+    color: rgb(36, 85, 155);
+}
+/* marqur end */
+/* paragraph start */
+.paragraph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(206, 206, 206, 0.171);
+    text-align: justify;
+    color: rgb(124, 124, 124);
+    word-spacing: 2px;
+    font-size: 14px;
+    line-height: 25px;
+    padding: 60px 10px;
+}
+/* paragraph end */
+/* counting div start */
+.counting{
+    width: 100%;
+    height: 380px;
+    background-color:rgb(49, 109, 195) ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counting>#count{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right:55px ;
+}
+.counting img{
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.counting h1{
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-family: 'Merriweather', serif;
+}
+.counting p{
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.counting span{
+    color: rgb(5, 182, 5);
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* counting div end */
+/* activity-start */
+.activity{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+    background-color: rgba(245, 245, 245, 0.733);
+}
+.activity>.main-heading{
+    width: 400px;
+}
+.activity >.top{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.activity >.bottom{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.activity >.top>#box{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgb(146, 146, 146);
+    height: 185px;
+    width: 290px;
+    margin-left: 20px;
+}
+.activity >.bottom>#box{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgb(146, 146, 146);
+    height: 185px;
+    width: 290px;
+    margin-left: 20px;
+}
+.activity img{
+    margin-bottom: 10px;
+}
+.activity p{
+    color:blue ;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* activity end */
+/* mission start */
+.mission{
+    width: 100%;
+    display: flex;
+    padding: 20px 100px;
+}
+.mission-box{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.mission-box>.top{
+    display: flex;
+    margin-bottom: 20px;
+}
+.mission-box>.bottom{
+    width: 100%;
+    display: flex;
+}
+.mission-box #box{
+    height: 70px;
+    width: 320px;
+    margin-right: 30px;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    border: 1px solid rgb(204, 204, 204);
+}
+.mission-box #box img{
+    margin-right: 20px;
+}
+.mak2{
+    width: 300px;
+    height: 200px;
+    z-index: -2;
+}
+.mak2>.more{
+    color: blue;
+}
+.mission h2{
+    font-family: 'Merriweather', serif;
+    color: rgb(5, 5, 224);
+    font-size: 25px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid green;
+}
+/* mission end */
+/* iage gallery start */
+.image-gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0;
+}
+.image-gallery>img{
+    margin-bottom: 20px;
+}
+/* image gallery end */
+/* detail start */
+.contact-detail{
+    width: 100%;
+    height: 400px;
+    background-color:#2a2c36;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-detail>.data{
+    display: flex;
+}
+.contact-detail>.data>ul{
+    list-style: none;
+}
+.contact-detail>.data>ul>li{
+    margin-bottom: 10px;
+    color: rgb(184, 184, 184);
+    font-size: 14px;
+}
+.contact-detail>.data>ul>li>i{
+    color: green;
+}
+.contact-detail>.data>h3{
+    color: white;
+    border-bottom: 2px solid green;
+    height: 25px;
+    margin-left: 50px;
+    width: 350px;
+
+}
+.contact-detail>.data>.icons{
+    margin-left: 50px;
+}
+.contact-detail>.data>.icons>h3{
+    color: white;
+    margin-bottom: 20px;
+}
+.contact-detail>.data>.icons i{
+    background-color: blue;
+    color: white;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 18px;
+}
+/* contact-detal end */
+/* fotter start */
+.fotter{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    padding-left: 100px;
+    font-size: 13px;
+}
+.goup>i{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    position: fixed;
+    padding: 10px;
+    z-index: 1;
+
+}
